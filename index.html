@@ -1,0 +1,46 @@
+<!-- <a href="javascript:openSite()">Click to go to a random site</a>
+<script>
+var links = [
+              "v1.html",
+              "v2.html",
+              "v3.html"]
+
+           var openSite = function() {
+              // get a random number between 0 and the number of links
+              var randIdx = Math.random() * links.length;
+              // round it, so it can be used as array index
+              randIdx = parseInt(randIdx, 10);
+              // construct the link to be opened
+              var link = 'http://' + links[randIdx];
+
+     return link;
+    };
+</script> -->
+
+<!-- <script>
+    var sites = [
+              "v1.html",
+              "v2.html",
+              "v3.html"
+    ];
+
+    function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+    }
+</script>
+<a href="#" onclick="randomSite();">Random</a>
+<meta http-equiv="refresh" content="0; URL='http://new-website.com'" /> -->
+
+<script type="text/javascript">
+
+var urls = new Array();
+urls[0] = "v1.html";
+urls[1] = "v2.html";
+urls[2] = "v3.html";
+
+var random = Math.floor(Math.random()*urls.length);
+
+window.location = urls[random];
+
+</script>
